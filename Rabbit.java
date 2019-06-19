@@ -21,14 +21,17 @@ public class Rabbit {
 	// -----------
 	// METHODS 
 	// ------------
-	public void printCurrentPosition() {
-		System.out.println("The current position of the rabbit is: ");
+	public String printCurrentPosition() {
+		return "The current position of the rabbit is: "+ xPosition +","+yPosition;
 	}
 
 	public void sayHello() {
 		System.out.println("Hello! I am a rabbit!");
 	}
-	
+	public void moveRight()
+	{
+		xPosition=xPosition+15;
+	}
 	// ----------------
 	// ACCESSOR METHODS
 	// ----------------

@@ -1,24 +1,39 @@
-public class Main {	
+public class Main {
+	static  boolean runForever = true;
+	static Rabbit rabbit = new Rabbit(30,10);
 	public static void main(String[] args) throws InterruptedException {
-		Rabbit rabbit = new Rabbit(20,10);
+		
 		rabbit.sayHello();
 		boolean runForever = true;
 
-		while (runForever == true) {
+		
+		moveLeft();
+		
+	}
+  public static void moveLeft() throws InterruptedException
+  {
+	 
+	  while (runForever == true) {
 			
 			System.out.println("Rabbit is at"+rabbit.printCurrentPosition());
 			if(rabbit.getxPosition()>0)
 			rabbit.moveLeft();
 			else
-			break;
+			moveRight();
 			Thread.sleep(1000);
-		}
-		while (runForever == true) {
+		}  
+  }
+  public static void moveRight() throws InterruptedException
+  {
+	 
+	  while (runForever == true) {
 			
 			System.out.println("Rabbit is at"+rabbit.printCurrentPosition());
-			rabbit.moveRight();
+			if(rabbit.getxPosition()<500)
+				rabbit.moveRight();
+			else 
+				moveLeft();
 			Thread.sleep(1000);
 		}
-	}
-
+  }
 }

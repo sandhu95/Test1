@@ -32,6 +32,10 @@ public class Rabbit {
 	{
 		xPosition=xPosition+15;
 	}
+	public void moveLeft()
+	{
+		xPosition=xPosition-15;
+	}
 	// ----------------
 	// ACCESSOR METHODS
 	// ----------------

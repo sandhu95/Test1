@@ -7,7 +7,7 @@ public class Main {
 		while (runForever == true) {
 			
 			System.out.println("Rabbit is at"+rabbit.printCurrentPosition());
-			rabbit.moveRight();
+			rabbit.moveLeft();
 			Thread.sleep(1000);
 		}
 	}

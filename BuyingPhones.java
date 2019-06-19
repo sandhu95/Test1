@@ -8,6 +8,9 @@
 			Scanner s = new Scanner(System.in);
 			double price = s.nextDouble();
 			double price3=price/2.0;
+			System.out.println("Phone 1 - $"+ price);
+			System.out.println("Phone 2 - $"+ price);
+			System.out.println("Phone 3 - $"+ price3);
 		}
 		
 

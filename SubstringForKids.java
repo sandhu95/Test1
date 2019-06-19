@@ -4,7 +4,7 @@ public class SubstringForKids {
 	public static void main(String[] args) 
 	{
 		System.out.println("SUBSTRING FOR KIDS");
-		String new1= substringForKids(3,5,"HelloWorld");
+		String new1= substringForKids(5,3,"HelloWorld");
 		System.out.println(new1);
 	}
 	
@@ -18,6 +18,8 @@ public class SubstringForKids {
 			{
 				y+=x.charAt(p);
 			}
+		if(i>j)
+			return "you have given the invalid output";
 		return y;
 	}
 }
